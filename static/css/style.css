@@ -1,0 +1,251 @@
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Clearfix */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: white;
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: #5694f1;
+    font-weight: 400;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-weight: normal;
+}
+
+h1 {
+    color: #222;
+  font-size: 22px;
+    margin-top: 0.25em;
+}
+
+h2 {
+    color: #aaa;
+    margin-top: 0.25em;
+    font-size:16px;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -255px;
+  height: 510px;
+}
+
+/*
+@media only screen and (max-height: 560px),
+       only screen and (max-width: 578px) {
+
+}
+*/
+
+header {
+  position: absolute;
+  top: 48%;
+  right: 58%;
+  margin-top: -125px;
+  width: 280px;
+  text-align: center;
+}
+
+header a {
+	
+}
+
+header #avatar {
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+
+header #avatar g {
+  pointer-events: none;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+header p {
+  top: 67px;
+}
+
+header h1 {
+  color: #121301;
+}
+
+header p {
+  padding-top: 4px;
+  color: #7B7B7B;
+}
+
+#contact {
+  padding-top: 12px;
+}
+
+#contact a {
+  display: inline-block;
+  line-height: 1.25em;
+}
+
+#contact a svg path {
+  fill: #7B7B7B;
+}
+
+#contact a:hover svg path {
+  fill: #121301;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  margin-top: -6.3em;
+  width: 530px;
+}
+
+#content section {
+  margin-bottom: 2em;
+  margin-right: 20px;
+}
+
+#content > section > div + div {
+	margin-top: 1em;
+}
+
+#content div.overhang {
+	font-weight: bold;
+	float:left;
+	line-height: 1.25em
+}
+
+#content a {
+	text-decoration: none;
+	color: #5694f1;
+}
+
+#content a:hover {
+	text-decoration: underline;
+	color: #5694f1;
+}
+
+#content div.date {
+	font-weight: normal;
+	color:#aaa;
+}
+
+#content div.greyed-out {
+	color:#aaa;
+}
+
+#content div.description {
+	margin-left: 5.5em;
+	line-height: 1.25em
+}
+
+#content section h2 {
+  color: #121301;
+  height: 1.5em;
+}
+
+#content section ul {
+  color: #7B7B7B;
+  line-height: 22px;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+#content section ul a {
+  color: #7B7B7B;
+  text-decoration: none;
+}
+
+#content section ul a:hover {
+  color: #121301;
+}
+
+#work div.title {
+	margin-bottom: 0.25em;
+	color:#121301;
+}
+
+#work div.description {
+	color:#777;
+}
+
+#publications span.title {
+	font-style: italic;
+}
+
+#interests li {
+  display: inline-block;
+	margin-right: 1em;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+	position: static;
+    margin-top: 20px;
+    height:auto;
+  }
+  header {
+    position: static;
+    margin: 0;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+  }
+  
+    header #avatar {
+	  width:90px;
+	  height:90px;
+	  float:left;
+	  margin-left: 0px;
+  }	
+  
+  #content {
+/*     position: absolute; */
+    left: 24px;
+    right: 24px;
+    margin:0;
+    margin-left: 0;
+    width: auto;
+  }
+  
+  #content section,
+  #content section#projects,
+  #content section#work {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
+
+
+
+
