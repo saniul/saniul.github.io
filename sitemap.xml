@@ -5,4 +5,10 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+	
+	<url>
+		<loc>http://saniul.org/static/CV.pdf</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
 </urlset>
