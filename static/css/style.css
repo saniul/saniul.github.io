@@ -60,13 +60,6 @@ body {
   height: 510px;
 }
 
-/*
-@media only screen and (max-height: 560px),
-       only screen and (max-width: 578px) {
-
-}
-*/
-
 header {
   position: absolute;
   top: 48%;
@@ -208,7 +201,15 @@ header p {
 	margin-right: 1em;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px),
+only screen and (max-height:700px),
+braille,
+embossed,
+print,
+projection,
+speech,
+tty,
+tv {
   body {
 	position: static;
     margin-top: 20px;
