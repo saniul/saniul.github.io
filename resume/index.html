@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8SQNB9JMED"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-8SQNB9JMED');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<meta name="description" content="Resume of Saniul Ahmed, Staff Software Engineer and Founding Engineer. Cross-platform UI frameworks, developer experience, and full-stack AI products.">
+	<link rel="canonical" href="https://saniul.com/resume/">
+	<title>Saniul Ahmed · Resume</title>
+	<style>
+		:root {
+			--bg: #fff;
+			--text: #111;
+			--muted: #5f5f5f;
+			--rule: #e2e2e2;
+			--link: #111;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #111;
+				--text: #eee;
+				--muted: #a0a0a0;
+				--rule: #2c2c2c;
+				--link: #eee;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: 0;
+			padding: 48px 24px 64px;
+			background: var(--bg);
+			color: var(--text);
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			line-height: 1.5;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		main {
+			max-width: 760px;
+			margin: 0 auto;
+		}
+
+		a {
+			color: var(--link);
+			text-decoration: underline;
+			text-decoration-color: var(--rule);
+			text-underline-offset: 2px;
+		}
+
+		a:hover,
+		a:focus-visible {
+			text-decoration-color: currentColor;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 30px;
+			font-weight: 650;
+			letter-spacing: -0.02em;
+			line-height: 1.15;
+		}
+
+		header .title {
+			margin: 4px 0 10px;
+			color: var(--muted);
+			font-size: 16px;
+		}
+
+		header .contact {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2px 18px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 14px;
+		}
+
+		.download {
+			margin: 10px 0 0;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.summary {
+			margin: 18px 0 0;
+		}
+
+		section {
+			margin-top: 26px;
+		}
+
+		h2 {
+			margin: 0 0 12px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid var(--rule);
+			color: var(--muted);
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.09em;
+			text-transform: uppercase;
+		}
+
+		.role {
+			margin-top: 16px;
+			break-inside: avoid;
+		}
+
+		.role:first-of-type {
+			margin-top: 0;
+		}
+
+		.role-head {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 0 16px;
+		}
+
+		h3 {
+			margin: 0;
+			font-size: 15px;
+			font-weight: 600;
+		}
+
+		h3 .org {
+			font-weight: 400;
+		}
+
+		.when {
+			color: var(--muted);
+			font-size: 13.5px;
+			font-variant-numeric: tabular-nums;
+			white-space: nowrap;
+		}
+
+		.blurb {
+			margin: 2px 0 0;
+			color: var(--muted);
+			font-size: 14px;
+		}
+
+		ul.points {
+			margin: 6px 0 0;
+			padding-left: 18px;
+		}
+
+		ul.points li {
+			margin-top: 3px;
+		}
+
+		ul.points li::marker {
+			color: var(--muted);
+		}
+
+		.compact p {
+			margin: 0 0 5px;
+		}
+
+		.compact p:last-child {
+			margin-bottom: 0;
+		}
+
+		dl.skills {
+			display: grid;
+			grid-template-columns: max-content 1fr;
+			gap: 4px 16px;
+			margin: 0;
+		}
+
+		dl.skills dt {
+			color: var(--muted);
+		}
+
+		dl.skills dd {
+			margin: 0;
+		}
+
+		.print-hint {
+			margin-top: 36px;
+			color: var(--muted);
+			font-size: 13px;
+		}
+
+		.print-hint button {
+			padding: 0;
+			border: 0;
+			background: none;
+			color: inherit;
+			font: inherit;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		@media (max-width: 520px) {
+			dl.skills {
+				grid-template-columns: 1fr;
+				gap: 0;
+			}
+
+			dl.skills dd {
+				margin-bottom: 6px;
+			}
+		}
+
+		@page {
+			size: A4;
+			margin: 10mm 14mm;
+		}
+
+		@media print {
+			:root {
+				--bg: #fff;
+				--text: #000;
+				--muted: #555;
+				--rule: #ccc;
+				--link: #000;
+			}
+
+			body {
+				padding: 0;
+				font-size: 9.3pt;
+				line-height: 1.34;
+			}
+
+			main {
+				max-width: none;
+			}
+
+			header h1 {
+				font-size: 20pt;
+			}
+
+			header .title {
+				margin: 2px 0 5px;
+				font-size: 10.5pt;
+			}
+
+			header .contact,
+			.blurb {
+				font-size: 9pt;
+			}
+
+			.summary {
+				margin-top: 9px;
+			}
+
+			section {
+				margin-top: 10px;
+			}
+
+			h2 {
+				margin-bottom: 5px;
+				padding-bottom: 2px;
+				font-size: 8pt;
+			}
+
+			h3 {
+				font-size: 9.8pt;
+			}
+
+			.when {
+				font-size: 9pt;
+			}
+
+			.role {
+				margin-top: 6px;
+			}
+
+			ul.points {
+				margin-top: 3px;
+				padding-left: 14px;
+			}
+
+			ul.points li {
+				margin-top: 1px;
+			}
+
+			.compact p {
+				margin-bottom: 2px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.download,
+			.print-hint {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Saniul Ahmed</h1>
+			<p class="title">Staff Software Engineer · Founding Engineer</p>
+			<ul class="contact">
+				<li><a href="mailto:saniul.ahmed@gmail.com">saniul.ahmed@gmail.com</a></li>
+				<li><a href="https://saniul.com/">saniul.com</a></li>
+				<li><a href="https://github.com/saniul" rel="nofollow">github.com/saniul</a></li>
+				<li><a href="https://www.linkedin.com/in/saniul" rel="nofollow">linkedin.com/in/saniul</a></li>
+			</ul>
+			<p class="download"><a href="/resume/saniul-ahmed-resume.pdf" download>Download PDF</a></p>
+			<p class="summary">
+				Product-minded engineer with 14 years across both ends of the scale: co-led the
+				cross-platform UI framework behind every major surface of Snapchat, then ran engineering
+				across the stack as founding engineer at a seed-stage AI startup. Happiest owning a problem
+				from prototype to production (product, frontend, backend, AI and infrastructure) and
+				making other engineers faster along the way.
+			</p>
+		</header>
+
+		<section>
+			<h2>Experience</h2>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>Independent <span class="org">· Exploring &amp; building</span></h3>
+					<span class="when">Jan 2026 – Present</span>
+				</div>
+				<ul class="points">
+					<li>Exploring and building my own ideas through agentic development and agentic creation workflows.</li>
+					<li>Agent tooling: <a href="https://pingme.fyi" rel="nofollow">Ping Me</a>, notifications and agent-driven home-screen widgets; tooling and an MCP server that let agents operate a connected iPhone or iPad; an assistant injected into live phone calls.</li>
+					<li>Apps and games: an iOS translation app with a novel interaction model; an app for noticing flowers and foliage in the real world; a <a href="https://machinations.io" rel="nofollow">machinations.io</a>-like tool, library and MCP server for simulating dynamic systems; multiple games.</li>
+				</ul>
+			</div>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>Founding Engineer <span class="org">· Butterflies AI (later Boba Labs)</span></h3>
+					<span class="when">May 2024 – Dec 2025</span>
+				</div>
+				<p class="blurb">Seed-stage consumer AI startup; $4.8M round led by Coatue.</p>
+				<ul class="points">
+					<li>Took over engineering across the stack (web and mobile apps, backend, AI and infrastructure) for <a href="https://techcrunch.com/2024/06/18/former-snap-engineer-launches-butterflies-a-social-network-where-ais-and-humans-coexist/" rel="nofollow">Butterflies</a>, a social network where humans and AI characters coexist.</li>
+					<li>Designed, prototyped and built a Snapchat-like product for interacting with an LLM-based character: proactive messaging, a Stories-like feature, memory, and interactions between characters.</li>
+					<li>Owned the company's next two pivots: a web video editor with generative video features, which grew into a “swiss army knife” platform for AI video generation, and then an anime-focused video generation platform.</li>
+					<li>Built durable workflows that made generation reliable on top of a very unreliable generation stack, plus in-house credits-based billing.</li>
+				</ul>
+			</div>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>Staff Software Engineer <span class="org">· Snap Inc.</span></h3>
+					<span class="when">Dec 2018 – Jul 2023</span>
+				</div>
+				<ul class="points">
+					<li>Co-led <a href="https://github.com/Snapchat/valdi" rel="nofollow">Valdi</a>, Snap's cross-platform UI framework, similar in scope to React Native: declarative TypeScript compiled to native views on iOS and Android, with no web views or JavaScript bridge. Later open-sourced (16k+ stars).</li>
+					<li>Evangelised the framework and drove its adoption: from essentially one team in one office when I joined to every major surface of the app and the default stack for new teams and initiatives, including Snapchat+ (30M+ subscribers, $1B+ annualised revenue run rate).</li>
+					<li>Focused on developer experience, the tooling and iteration loop product engineers work in every day, and on the platform-specific layers of the framework.</li>
+					<li>Integrated the framework into Snap's build systems through the Buck and Bazel migrations, and improved CI on the critical path for cross-platform development: monorepo enablement and atomic multi-repo merges.</li>
+				</ul>
+			</div>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>Senior Software Engineer <span class="org">· Postmates</span></h3>
+					<span class="when">Jul 2016 – Nov 2018</span>
+				</div>
+				<ul class="points">
+					<li>Consumer app and Growth infrastructure: a major redesign, the main feed, internationalisation and instrumentation; built Merchant Spotlight end to end: backend, iOS client and internal web CMS.</li>
+				</ul>
+			</div>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>iOS Developer <span class="org">· Hey, Inc.</span></h3>
+					<span class="when">Mar 2014 – Jun 2016</span>
+				</div>
+				<ul class="points">
+					<li>Shipped consumer apps at a small San Francisco startup: Heyday (automatic photo journal), Stolen and Famous.</li>
+				</ul>
+			</div>
+
+			<div class="role">
+				<div class="role-head">
+					<h3>Head of iOS Development <span class="org">· NeoSphere</span></h3>
+					<span class="when">Mar 2012 – Feb 2014</span>
+				</div>
+				<ul class="points">
+					<li>Led the iOS team at a Moscow agency through ~10 projects; grew the team, ran hiring and mentored juniors.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+			<dl class="skills">
+				<dt>AI-native</dt>
+				<dd>Agentic development and workflows, MCP tooling, generative AI products, durable workflows</dd>
+				<dt>Infrastructure</dt>
+				<dd>GCP, Kubernetes, Temporal, OpenTelemetry, nginx, AWS, Bazel, Buck, CI and monorepo tooling</dd>
+				<dt>Languages</dt>
+				<dd>TypeScript, Swift, Objective-C, Kotlin, Python, Go; some C++. Centaur-programmer era: whatever is needed.</dd>
+			</dl>
+		</section>
+
+		<section class="compact">
+			<h2>Writing &amp; talks</h2>
+			<p><a href="https://www.objc.io/issues/21-camera-and-photos/the-photos-framework/" rel="nofollow">The Photos Framework</a> (objc.io #21); talks on <a href="https://youtu.be/O9HQqNjdxPM?t=942" rel="nofollow">Prototyping Touch Interfaces</a> and on the tvOS Focus Engine &amp; Custom Gestures; co-author of a <a href="https://www.sciencedirect.com/science/article/pii/S0968090X11001690" rel="nofollow">paper on London's shared bicycle scheme</a> (Transportation Research Part C).</p>
+		</section>
+
+		<section>
+			<h2>Education</h2>
+			<div class="role">
+				<div class="role-head">
+					<h3>MEng Computer Science <span class="org">· University College London</span></h3>
+					<span class="when">2007 – 2011</span>
+				</div>
+			</div>
+		</section>
+
+		<p class="print-hint"><a href="/resume/saniul-ahmed-resume.pdf" download>Download PDF</a> · <a href="/">saniul.com</a></p>
+	</main>
+</body>
+</html>
